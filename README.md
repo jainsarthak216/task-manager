@@ -3,7 +3,7 @@
 A full-stack Task Manager web application that allows users to create, view, update, and delete tasks. Built with:
 
 - 🚀 **Backend**: Golang (Gin framework)
-- 🗄️ **Database**: PostgreSQL (or SQLite for local testing)
+- 🗄️ **Database**: PostgreSQL
 - 🖥️ **Frontend**: React.js
 - 🔐 **CORS-enabled**: Seamless communication between frontend and backend
 - ✅ **Modular architecture**: Clean separation of concerns
