@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TaskItem from './TaskItem';
 
 const TaskList = ({ tasks, onEdit, onDelete }) => {
-  if (!tasks.length) return <p>No tasks found.</p>;
+  if (!tasks?.length) return <p>No tasks found.</p>;
   return (
     <div>
       {tasks.map(task => (
@@ -10,6 +11,20 @@ const TaskList = ({ tasks, onEdit, onDelete }) => {
       ))}
     </div>
   );
+};
+
+TaskList.propTypes = {
+  tasks: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string,
+      status: PropTypes.string,
+      due_date: PropTypes.string,
+    })
+  ).isRequired,
+  onEdit: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default TaskList;
