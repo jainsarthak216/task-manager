@@ -1,8 +1,3 @@
-Here's a complete and clean `README.md` for your **Task Manager** full-stack application using **Go (Gin)** backend, **React** frontend, and **PostgreSQL** database:
-
----
-
-```markdown
 # 📝 Task Manager Web Application
 
 A full-stack Task Manager web application that allows users to create, view, update, and delete tasks. Built with:
