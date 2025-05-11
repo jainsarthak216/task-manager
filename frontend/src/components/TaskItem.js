@@ -14,7 +14,7 @@ const TaskItem = ({ task, onEdit, onDelete }) => {
   };
 
   return (
-    <div style={{ border: '1px solid #ddd', margin: '10px 0', padding: '10px' }}>
+    <div className='task-card'>
       <h4>{task.title}</h4>
       <p>{task.description}</p>
       <p>Status: {task.status}</p>
