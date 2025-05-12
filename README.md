@@ -16,6 +16,7 @@ A full-stack Task Manager web application that allows users to create, view, upd
 
 task-manager/
 ├── backend/
+│   ├── .gitignore
 │   ├── main.go
 │   ├── go.mod
 │   ├── go.sum
@@ -26,9 +27,23 @@ task-manager/
 │   ├── router/
 │   │   └── router.go
 │   └── handlers/
-│       └── task\_handler.go
+│       └── task_handler.go
 ├── frontend/
-│   └── (React app files via Create React App)
+│   ├── .gitignore
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public/
+│   │   └── (React public assets like index.html, favicon.ico, etc.)
+│   └── src/
+│       ├── api/
+│       │   └── tasks.js
+│       ├── components/
+│       │   ├── TaskForm.css
+│       │   ├── TaskForm.js
+│       │   ├── TaskItem.js
+│       │   └── TaskList.js
+│       ├── App.js
+│       └── index.js
 
 ````
 
